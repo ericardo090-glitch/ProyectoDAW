@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Galería Espacial</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="planetas.html">Planetas</a></li>
+            <li><a href="contactanos.html">Contactanos</a></li>
+        </ul>
+    </nav>
+    <button id="modoBtn">🌙 Modo Oscuro</button>
+</header>
+
+<section class="galeria">
+    <img src="imagenes/sol.jpeg" alt="Sol">
+    <img src="imagenes/tierra.jpeg" alt="Tierra">
+    <img src="imagenes/saturno.jpeg" alt="Saturno">
+</section>
+
+<section class="formulario">
+    <h2>Contacto</h2>
+    <form id="contactForm">
+        <label>Nombre:</label>
+        <input type="text" id="nombre">
+
+        <label>Email:</label>
+        <input type="email" id="email">
+
+        <label>Mensaje:</label>
+        <textarea id="mensaje"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="resultado"></p>
+</section>
+
+<footer>
+    <p>© 2025 Sistema Solar - Todos los derechos reservados</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

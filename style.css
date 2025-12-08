@@ -1,0 +1,238 @@
+/* --------------------------
+   ESTILOS GENERALES
+--------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fa;
+    color: #222;
+    transition: background 0.4s, color 0.4s;
+}
+
+/* --------------------------
+   HEADER
+--------------------------- */
+header {
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: white;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: #ffffffcc;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+#modoBtn {
+    background: #fff;
+    color: #004e92;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#modoBtn:hover {
+    background: #004e92;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* --------------------------
+   BANNER
+--------------------------- */
+.banner {
+    background: url('img/banner.jpg') center/cover no-repeat fixed;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 3px 10px black;
+    font-size: 2.5rem;
+    font-weight: 600;
+    animation: fadeIn 1.5s ease;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --------------------------
+   CONTENIDO PRINCIPAL
+--------------------------- */
+.contenido,
+section {
+    padding: 40px;
+}
+
+article {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+    transition: 0.3s;
+    animation: fadeIn 1s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* --------------------------
+   GALERÍA
+--------------------------- */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+    transition: 0.4s;
+}
+
+.galeria img:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+}
+
+/* --------------------------
+   FORMULARIO
+--------------------------- */
+.formulario {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 2px solid #004e92;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #000428;
+    box-shadow: 0 0 8px rgba(0,78,146,0.5);
+}
+
+button[type=submit] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type=submit]:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+#resultado {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* --------------------------
+   FOOTER
+--------------------------- */
+footer {
+    background: #000428;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+/* --------------------------
+   MODO OSCURO
+--------------------------- */
+.dark {
+    background: #0b0f1a;
+    color: #ddd;
+}
+
+.dark header {
+    background: linear-gradient(135deg, #02010a, #0e2d4f);
+}
+
+.dark article {
+    background: #151a27;
+    color: #eee;
+}
+
+.dark .formulario {
+    background: #151a27;
+    color: #eee;
+}
+
+.dark footer {
+    background: #02010a;
+}
+.banner-img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
